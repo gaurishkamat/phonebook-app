@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 
 mongoose.set("strictQuery", false);
 
-// MONGODB_URI="mongodb+srv://gaurishkamat:MongoMe23@cluster0.qqlivo2.mongodb.net/phonebookApp?retryWrites=true&w=majority"
 const url = process.env.MONGODB_URI;
 mongoose
   .connect(url)
