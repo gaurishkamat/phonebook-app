@@ -1,0 +1,34 @@
+GET http://localhost:3001/
+
+###
+
+GET http://localhost:3001/api/people/
+
+###
+
+GET http://localhost:3001/api/people/64ac230240953524b3570d01
+
+###
+
+POST http://localhost:3001/api/people/
+Content-Type: "application/json"
+
+{
+    "name": "Sarthak Rokde",
+    "number": "8786010833"
+}
+
+###
+
+DELETE  http://localhost:3001/api/people/64b184951a3ee199ef24f653
+
+
+###
+
+PATCH http://localhost:3001/api/people/64b184951a3ee199ef24f653
+Content-Type: "application/json"
+
+{
+    "name": "Sarthak Rokde",
+    "number": "8767010835"
+}
