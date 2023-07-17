@@ -1,19 +1,5 @@
 const mongoose = require("mongoose");
 
-mongoose.set("strictQuery", false);
-
-// eslint-disable-next-line no-undef
-const url = process.env.MONGODB_URI;
-mongoose
-  .connect(url)
-  .then(() => {
-    // eslint-disable-next-line quotes
-    console.log(`Successfully connected to Mongo DB`);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
-
 const personSchema = new mongoose.Schema({
   name: {
     type: String,
