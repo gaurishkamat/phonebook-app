@@ -2,13 +2,12 @@ const mongoose = require("mongoose");
 
 mongoose.set("strictQuery", false);
 
+// eslint-disable-next-line no-undef
 const url = process.env.MONGODB_URI;
-console.log("URL", url);
-console.log("PROCESS", process);
-console.log("PROCESS.ENV", process?.env);
 mongoose
   .connect(url)
-  .then((url) => {
+  .then(() => {
+    // eslint-disable-next-line quotes
     console.log(`Successfully connected to Mongo DB`);
   })
   .catch((error) => {

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js --watch index.js"
+    "dev": "nodemon index.js --watch index.js",
+    "lint": "eslint ."
   },
   "author": "Gaurish Kamat",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "mongoose": "^7.3.3"
   },
   "devDependencies": {
+    "eslint": "^8.45.0",
     "nodemon": "^3.0.1"
   }
 }
